@@ -4,7 +4,7 @@
 
 ## ¿Qué necesito para jugar?
 
-- Un ordenador con Java instalado (versión 17 o superior).
+- Un ordenador con un programa que pueda ejecutar java  (el nuestro es eclipse)
 - De 2 o más jugadores. El juego está pensado para partidas **multijugador**.
 
 ## Cómo empezar
