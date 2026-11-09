@@ -1,4 +1,28 @@
-
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.Random;
+public class Carton {
+	private int[][] numeros;
+	private boolean[][] marcados;
+	public Carton() {
+    	numeros = new int[3][5];
+    	marcados = new boolean[3][5];
+    	generar();
+	}
+	private void generar() {
+    	Random r = new Random();
+    	HashSet<Integer> usados =
+            	new HashSet<>();
+    	for(int i = 0; i < 3; i++) {
+        	for(int j = 0; j < 5; j++) {
+            	int numero;
+            	do {
+                	numero =
+                        	r.nextInt(90) + 1;
+            	} while(
+                    	usados.contains(
+                            	numero));
             	usados.add(numero);
             	numeros[i][j] = numero;
         	}
